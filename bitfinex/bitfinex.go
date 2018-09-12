@@ -1,11 +1,11 @@
 package bitfinex
 
 import (
-	"fmt"
-	"net/http"
 	"encoding/json"
-	"time"
+	"fmt"
 	"io/ioutil"
+	"net/http"
+	"time"
 )
 
 type Ticker struct {
@@ -20,7 +20,6 @@ type Ticker struct {
 	Volume          float64
 	High            float64
 	Low             float64
-
 }
 
 func GetTickers() []Ticker {
@@ -53,5 +52,3 @@ func GetTickers() []Ticker {
 	}
 	return tickers
 }
-
-
